@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>channels</title>
+</head>
+<body>
+    <style>
+        .container{
+            padding:30px;
+            
+            justify-content: space-evenly;
+            
+        }
+    </style>
+    <h1 style="color:black; text-align:center;font-size: 50px;">TOP CHANNELS FOR TRENDING NEWS</h1>
+    <div class="container">
+
+   <a href="http://127.0.0.1:5000/bbc"> 
+    <img src="{{url_for('static',filename='bbc.png')}}" alt="bbc" width="30%" height="30%"   ></a>
+    <a href="http://127.0.0.1:5000/google">
+    <img src="{{url_for('static',filename='google.jpg')}}" alt="google" width="30%" height="30%" ></a>
+    <a href="http://127.0.0.1:5000/index">
+        <img src="{{url_for('static',filename='abn.jpg')}}" alt="abn" width="30%" height="30%">
+    </a>
+    <a href="http://127.0.0.1:5000/abc">
+        <img src="{{url_for('static',filename='abc.jpg')}}" alt="abn" width="30%" height="30%">
+    </a>
+    <a href="http://127.0.0.1:5000/cbc">
+        <img src="{{url_for('static',filename='cbc.png')}}" alt="abn" width="30%" height="30%">
+    </a>
+    <a href="http://127.0.0.1:5000/foxsport">
+        <img src="{{url_for('static',filename='foxsport.jpg')}}" alt="fox" width="30%" height="30%">
+    </a>
+    
+</div>
+</body>
+</html>

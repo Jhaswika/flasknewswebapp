@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English  BBC news</title>
+    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
+</head>
+<body>
+      <div class="jumbotron" style="color:black;font-size: 40px;background-color: darkkhaki;text-align: center;">
+         <h1 style="color:black">BBC NEWS</h1>
+    </div>
+    <style>
+        .container{
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+    </style>
+    <div class="container">
+        {% for new, des, i in context %}
+        <center><img src="{{i}}" alt="" width="80%" height="50%"></center>
+        <h3>News: </h3> {{new}}
+        <h4>Description: </h4> {{des}}
+
+
+        {% endfor %}
+    </div>
+</body>
+</html>
